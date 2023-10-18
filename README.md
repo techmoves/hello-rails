@@ -131,8 +131,9 @@ You can deploy this project using:
 
 👤 **Phelelani Ndlovu**
 
-- GitHub: [@Katended](https://github.com/techmoves)
-- LinkedIn: [@katendedavid](https://www.linkedin.com/in/phelelani-ndlovu-883916160/)
+- GitHub: [@techmoves](https://github.com/techmoves)
+- LinkedIn: [@techmoves](https://www.linkedin.com/in/phelelani-ndlovu-883916160/)
+- Twitter: [@techmoves](https://twitter.com/Dopezonke_)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
