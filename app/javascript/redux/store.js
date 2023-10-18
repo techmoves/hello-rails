@@ -1,29 +1,11 @@
-import { createStore, applyMiddleware } from "redux";
-import thunk from "redux-thunk";
+const { configureStore } = require("@reduxjs/toolkit");
+import greetingReducer from "./store/reducers/greetingReducer";
 
-const initialState = {
-  randomGreeting: "",
-};
-
-const SET_RANDOM_GREETING = "SET_RANDOM_GREETING";
-
-export const setRandomGreeting = (greeting) => ({
-  type: SET_RANDOM_GREETING,
-  payload: greeting,
+const store = configureStore({
+  reducer: {
+    greeting: greetingReducer,
+    // Add other reducers here if needed
+  },
 });
-
-const reducer = (state = initialState, action) => {
-  switch (action.type) {
-    case SET_RANDOM_GREETING:
-      return {
-        ...state,
-        randomGreeting: action.payload,
-      };
-    default:
-      return state;
-  }
-};
-
-const store = createStore(reducer, applyMiddleware(thunk));
 
 export default store;
